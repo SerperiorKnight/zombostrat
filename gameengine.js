@@ -77,7 +77,7 @@ function sleep() {
 		destroyDefence(player.x,player.y);
 		result+="Your defences were not enough to keep the dead out, they came in the night. "+combatZombies(parseInt(Math.random() * (10)+5));
 	} else {
-		result+= " The dead were snooping around outside, they didn't get in, but they did a number on the defences you had set up.  You wonder if there are any hardware stores nearby, or maybe some schools?";
+		result+= " The dead were snooping around outside, they didn't get in, but they did a number on the defences you had set up.  You wonder if there are any hardware stores nearby, or maybe some schools? Just anywhere to get barricades.";
 		mapGrid[player.x][player.y].defence-=parseInt(Math.random()*2+2);
 		if (mapGrid[player.x][player.y].defence<0){
 			mapGrid[player.x][player.y].defence=0;
